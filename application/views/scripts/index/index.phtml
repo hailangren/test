@@ -1,0 +1,49 @@
+<style>
+	h1{
+		color: #0398CA;
+	}
+
+	h3{
+		color: #91BE3F;
+	}
+
+	dl {
+		 margin:0;
+		 padding-left:10px;
+		 clear:both;
+		 overflow:hidden;
+	}
+	dt {
+		 margin:0;
+		 padding-top:15px;
+		 float:left;
+		 width:28%;
+		 list-style-type:bullet;
+	}
+	dd {
+		 margin:0;
+		 padding-top:15px;
+		 float:right;
+		 width:72%;
+	}
+	div#information
+	{
+		color: #222;
+		width:  600px;
+		height: 200px;
+		border: 1px solid #678Bc9;
+		text-align: left;
+		background:#eee;
+	}
+</style>
+<div id="content">
+    <h1>Cooking</h1>
+    <h3>Check Fridge and Recipes to make dinner</h3>
+
+    <div id="information">
+        <dl><?php echo $this->formFileUpload ?></dl>
+    </div>
+    <div id="dinner">
+        <h1><?php if($this->dinner) echo 'Cooking recipe: '.$this->dinner ?></h1>
+    </div>
+</div>
